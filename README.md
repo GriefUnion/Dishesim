@@ -1,3 +1,3 @@
 # Dismemberment Addon
 
-The ultimate meteor addon, currently work in progress.
+The ultimate meteor client addon, currently work in progress.
