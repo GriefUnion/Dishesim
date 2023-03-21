@@ -13,6 +13,7 @@ public class TestModule extends Module {
 
     @EventHandler
     private void onTick(TickEvent.Post event) {
+        if (mc.player.getVehicle() == null) return;
         mc.player.getVehicle().setVelocity(0, 0, 0);
         for (int i = 0; i < 4; i++) {
             mc.player.getVehicle().updatePosition(
