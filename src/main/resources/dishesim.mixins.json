@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "me.griefunion.dishesim.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

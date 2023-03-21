@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "dishesim",
+  "version": "${version}",
+  "name": "Dishesim",
+  "description": "The ultimate meteor client addon.",
+  "authors": [
+    "F_x"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "me.griefunion.dishesim.DishesimAddon"
+    ]
+  },
+  "mixins": [
+    "dishesim.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=1.19.4",
+    "meteor-client": "*"
+  }
+}
