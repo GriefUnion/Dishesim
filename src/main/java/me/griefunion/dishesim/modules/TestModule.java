@@ -15,7 +15,8 @@ public class TestModule extends Module {
     private void onTick(TickEvent.Post event) {
         mc.player.getVehicle().setVelocity(0, 0, 0);
         for (int i = 0; i < 4; i++) {
-            mc.player.getVehicle().updatePosition(mc.player.getVehicle().getX(), mc.player.getVehicle().getY() + 20, mc.player.getVehicle().getZ());
+            mc.player.getVehicle().updatePosition(
+                    mc.player.getVehicle().getX(), mc.player.getVehicle().getY() + 20, mc.player.getVehicle().getZ());
             mc.player.networkHandler.sendPacket(new VehicleMoveC2SPacket(mc.player.getVehicle()));
         }
     }
